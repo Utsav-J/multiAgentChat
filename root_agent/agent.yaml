@@ -1,0 +1,10 @@
+name: root_agent
+description: Root orchestration agent for RAG system
+tools:
+  - name: classify_intent
+    agent: agent_a_intent
+    description: Classifies user intent and checks if query can be answered using PDFs
+    parameters:
+      - name: query
+        type: string
+        description: User input query

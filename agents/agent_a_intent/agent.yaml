@@ -1,0 +1,10 @@
+name: agent_a_intent
+model: gemini-2.0-flash  # Add this line
+description: Classifies if the user query can be answered from the PDF vector DB
+functions:
+  - name: classify_intent
+    description: Classify the user query and return intent with can_answer_from_pdf flag
+    parameters:
+      - name: query
+        type: string
+        description: The user input query
