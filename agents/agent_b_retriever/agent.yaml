@@ -1,0 +1,10 @@
+name: agent_b_retriever
+model: gemini-2.0-flash  # Add this line
+description: "Fetches top-k similar chunks from FAISS index for a given query."
+functions:
+  - name: retrieve_chunks
+    description: Retrieve top-k most relevant chunks from the FAISS index for a given query. Returns a list of {text: ..., source: ..., page: ...} dicts.
+    parameters:
+      - name: query
+        type: string
+        description: The user input query

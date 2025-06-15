@@ -26,3 +26,15 @@ with open("metadata.pkl", "wb") as f:
     pickle.dump(chunks_with_metadata, f)
 
 print("✅ FAISS index and metadata saved.")
+
+'''
+Each entry in metadata.pkl looks like:
+{
+    'content':     'Learning Transferable Visual Models From Natural Language Supervision\nAlec Radford* 
+                    1Jong Wook Kim* 1Chris Hallacy1Aditya Ramesh1Gabriel Goh1Sandhini Agarwal1\nGirish Sastry1Amanda Askell1Pamela Mishkin1Jack Clark1Gretchen 
+                    Krueger1Ilya Sutskever1\nAbstract\nState-of-the-art computer vision systems are\ntrained to predict a ﬁxed set 
+                    of predetermined\nobject categories. This restricted form of super-\nvis', 
+    'source_file': 'CLIP.pdf', 
+    'page': 1
+} 
+'''

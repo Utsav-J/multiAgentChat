@@ -1,0 +1,13 @@
+name: agent_c_llm
+model: gemini-2.0-flash  # Add this line
+description: Gives a properly formatted output based on the relevant chunks and user's query
+functions:
+  - name: generate_response
+    description: Gives a properly formatted output based on the relevant chunks and user's query
+    parameters:
+      - name: chunks
+        type: List[Dict]
+        description: The relevant chunks used for answering the query
+      - name: query
+        type: string
+        description: The user input query
